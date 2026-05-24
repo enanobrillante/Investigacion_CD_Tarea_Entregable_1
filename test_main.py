@@ -1,5 +1,5 @@
 import unittest
-from main import es_palindromo, es_primo, es_mayor_de_edad
+from main import es_palindromo, es_primo, es_mayor_de_edad, es_menor_de_edad
 
 
 class TestFunciones(unittest.TestCase):
@@ -13,6 +13,9 @@ class TestFunciones(unittest.TestCase):
 
     def test_es_mayor_de_edad(self):
         self.assertTrue(es_mayor_de_edad(18))
+
+    def test_es_menor_de_edad(self):
+        self.assertTrue(es_menor_de_edad(5))
         
 
 if __name__ == "__main__":

@@ -20,3 +20,11 @@ def es_mayor_de_edad(edad):
     if edad < 0:
         return "Edad no válida"
     return edad >= 18
+
+def es_menor_de_edad(edad):
+    if edad < 0:
+        return "Edad no válida"
+    return (edad > 0 and edad < 18)
+
+es_mayor_de_edad(19)
+es_menor_de_edad(5)
